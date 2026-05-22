@@ -83,13 +83,22 @@ tr[style*="display:none"] { display:none!important; }
 .state-note { font-size:10px; color:var(--muted); margin-top:3px; line-height:1.4; }
 footer { text-align:center; padding:18px; font-size:11px; color:var(--faint); border-top:1px solid var(--border); background:var(--bg); margin-top:16px; }
 .legend { display:flex; flex-wrap:wrap; gap:8px; padding:10px 28px; background:var(--bg); border-bottom:1px solid var(--border); }
+
+.last-updated-badge {
+  position:fixed; top:12px; right:16px; z-index:999;
+  background:#1a1a2e; color:rgba(255,255,255,0.85);
+  font-size:10px; font-weight:600; padding:4px 10px;
+  border-radius:20px; border:1px solid rgba(255,255,255,0.2);
+  white-space:nowrap;
+}
 </style>
 </head>
 <body>
+<div class="last-updated-badge">⏱ Updated 22 May 2026 08:00 IST</div>
 <header>
   <div>
     <h1>🗂 Product Backlog — Week of 22 May 2026</h1>
-    <p>80 items · 9 modules · Slack (14 channels) + Gmail (~150 threads) + Linear (250 issues) · Owners + Linear cross-refs included</p>
+    <p>Updated 22 May 2026 08:00 IST · 80 items · 41 with Linear tickets · 39 missing tickets · 6 status changes since last snapshot</p>
   </div>
 </header>
 
@@ -181,21 +190,21 @@ footer { text-align:center; padding:18px; font-size:11px; color:var(--faint); bo
   <th>State</th>
 </tr></thead>
 <tbody><tr data-module="bi" data-owner="jetin" data-priority="high" data-status="ip" data-linear="no">
-  <td><div class="item-title">Brand Brain UI — Knowledge Graph visualisation<br><span class="item-detail">UI showing full brand+industry context used by all agents (Creative/Moderator/Paid Media/Competition Tracker). Must show: products/services, guidelines, competitors, social/review/marketplace scrapes, market trends, content trends, all connected accounts. Plus magical demo showing all 4 agents using this intelligence. Karthik wants daily 20-min sync.</span><br><span class="item-when"><span class="src src-email">EMAIL</span> 20 May — Karthik V (CEO) direct to Jetin + Abu</span></div></td>
+  <td><div class="item-title">⛔ Brand Brain UI — Knowledge Graph visualisation<br><span class="item-detail">UI showing full brand+industry context used by all agents (Creative/Moderator/Paid Media/Competition Tracker). Must show: products/services, guidelines, competitors, social/review/marketplace scrapes, market trends, content trends, all connected accounts. Plus magical demo showing all 4 agents using this intelligence. Karthik wants daily 20-min sync.</span><br><span class="item-when"><span class="src src-email">EMAIL</span> 20 May — Karthik V (CEO) direct to Jetin + Abu</span></div></td>
   <td><span class="badge type-feat">Feature</span></td>
   <td><span class="badge p-high">High</span></td>
   <td><span class="owner own-jetin">Jetin</span></td>
   <td><span class="no-ticket">⚠️ No issue</span></td><td class="proj-cell">—</td>
   <td><span class="badge s-ip">In Progress</span><div class="state-note">Jetin committed to prototype + demo flow (20 May). Sundar: 'get full call notes from Mukund first.' No prototype yet. Adrian to set up graph + org skill for Bata + Dabur (Mukund urgent ask).</div></td>
 </tr><tr data-module="bi" data-owner="jetin" data-priority="high" data-status="todo" data-linear="no">
-  <td><div class="item-title">Dabur brand governance onboarding<br><span class="item-detail">Onboard 6+ Dabur brands (Red Toothpaste, Honey, Chyavanprash, Real Activ, Amla Hair Oil, Gulabari, Daburshop, jaqulineusa.com). Sources to ingest: dabur.com, TV ads (closest proxy to guidelines), annual reports. First real enterprise test for Brand Brain.</span><br><span class="item-when"><span class="src src-email">EMAIL</span> 20 May — Nandha → Sundar → Jetin (STARRED)</span></div></td>
+  <td><div class="item-title">⛔ Dabur brand governance onboarding<br><span class="item-detail">Onboard 6+ Dabur brands (Red Toothpaste, Honey, Chyavanprash, Real Activ, Amla Hair Oil, Gulabari, Daburshop, jaqulineusa.com). Sources to ingest: dabur.com, TV ads (closest proxy to guidelines), annual reports. First real enterprise test for Brand Brain.</span><br><span class="item-when"><span class="src src-email">EMAIL</span> 20 May — Nandha → Sundar → Jetin (STARRED)</span></div></td>
   <td><span class="badge type-feat">Feature</span></td>
   <td><span class="badge p-high">High</span></td>
   <td><span class="owner own-jetin">Jetin</span></td>
   <td><span class="no-ticket">⚠️ No issue</span></td><td class="proj-cell">—</td>
   <td><span class="badge s-todo">Todo</span><div class="state-note">Jetin 👍 on email, no action yet. Adrian + Abu got Mukund's urgent ask in #ai-designer same day.</div></td>
 </tr><tr data-module="bi" data-owner="jetin" data-priority="high" data-status="todo" data-linear="no">
-  <td><div class="item-title">Customer FAQs from Alo call → product roadmap triage<br><span class="item-detail">18 FAQs from Alo agency call (Karthik 20 May). Product roadmap items for Jetin: approval workflows + client sharing, custom reporting, credits clarity per image/video, PSD export, edit credits, custom typography, concept freshness/unlearn, T2V clarity, layout fix on translate+resize, Brand Health score, trust/confidence scores on Brand Intelligence, project progress + invoice billing, Social Sprout replacement.</span><br><span class="item-when"><span class="src src-email">EMAIL</span> 20 May — Karthik assigned @Jetin directly</span></div></td>
+  <td><div class="item-title">⛔ Customer FAQs from Alo call → product roadmap triage<br><span class="item-detail">18 FAQs from Alo agency call (Karthik 20 May). Product roadmap items for Jetin: approval workflows + client sharing, custom reporting, credits clarity per image/video, PSD export, edit credits, custom typography, concept freshness/unlearn, T2V clarity, layout fix on translate+resize, Brand Health score, trust/confidence scores on Brand Intelligence, project progress + invoice billing, Social Sprout replacement.</span><br><span class="item-when"><span class="src src-email">EMAIL</span> 20 May — Karthik assigned @Jetin directly</span></div></td>
   <td><span class="badge type-feat">Feature</span></td>
   <td><span class="badge p-high">High</span></td>
   <td><span class="owner own-jetin">Jetin</span></td>
@@ -221,9 +230,9 @@ footer { text-align:center; padding:18px; font-size:11px; color:var(--faint); bo
   <td><span class="badge p-high">High</span></td>
   <td><span class="owner own-shared">Jetin + Prem</span></td>
   <td><a href="https://linear.app/zocket-tech/issue/BRA-831/analyse-post-image-and-compare-with-user-comments-to-generate-accurate" target="_blank" class="lin-link lin-open">BRA-831</a><span class="lin-status">Backlog</span></td><td class="proj-cell"><span class="proj-name">Brand ORM — Research & Insights</span></td>
-  <td><span class="badge s-ip">In Progress</span><div class="state-note">Linear: Backlog, assigned to Ansh. Due Thu/Fri of Week 2.</div></td>
+  <td><span class="badge s-todo">Backlog ⚠️</span><div class="state-note">Linear: Backlog (regression — was In Progress in snapshot). Assigned Ansh. Due date passed. <em>Updated from Linear 22 May.</em></div></td>
 </tr><tr data-module="bi" data-owner="raghav" data-priority="high" data-status="todo" data-linear="no">
-  <td><div class="item-title">5paisa pilot — use-case mapping + Competitor Benchmarking V3<br><span class="item-detail">Channel created 19 May. Use-cases from 5paisa shared. Sundar tagged Jetin twice same day: use-cases + 'Direction for Competitor Benchmarking.' Covers perf marketing, creative automation, consumer engagement. Read.ai meeting 20 May, Clarify summary 15 May (STARRED).</span><br><span class="item-when"><span class="src src-both">BOTH</span> 15–19 May #5paisa-pilot + Clarify summary email</span></div></td>
+  <td><div class="item-title">⛔ 5paisa pilot — use-case mapping + Competitor Benchmarking V3<br><span class="item-detail">Channel created 19 May. Use-cases from 5paisa shared. Sundar tagged Jetin twice same day: use-cases + 'Direction for Competitor Benchmarking.' Covers perf marketing, creative automation, consumer engagement. Read.ai meeting 20 May, Clarify summary 15 May (STARRED).</span><br><span class="item-when"><span class="src src-both">BOTH</span> 15–19 May #5paisa-pilot + Clarify summary email</span></div></td>
   <td><span class="badge type-feat">Feature</span></td>
   <td><span class="badge p-high">High</span></td>
   <td><span class="owner own-raghav">Raghav 🔬</span></td>
@@ -251,7 +260,7 @@ footer { text-align:center; padding:18px; font-size:11px; color:var(--faint); bo
   <td><a href="https://linear.app/zocket-tech/issue/BRA-829/linkedin-connector-fetch-posts-comments-dms-and-respond-surface" target="_blank" class="lin-link lin-open">BRA-829</a><span class="lin-status">Todo</span></td><td class="proj-cell"><span class="proj-name">Brand ORM — Research & Insights</span></td>
   <td><span class="badge s-todo">Todo</span><div class="state-note">Linear: Urgent, assigned to Sabari. Scope blocker with Nandha still open.</div></td>
 </tr><tr data-module="bi" data-owner="jetin" data-priority="high" data-status="todo" data-linear="no">
-  <td><div class="item-title">GTM positioning overhaul — vision-led → conversion-led website + product narrative separation<br><span class="item-detail">Arun's audit: (1) Website too abstract — no workflow demos, use-case clarity, ROI proof; logo wall is SMBs not enterprise. (2) Separate GTM funnels for Creative AI / ORM AI / Paid Ads AI with ICPs, use cases, vertical pages. (3) Asset gap: explainer videos, workflow GIFs, UI walkthroughs, comparison creatives. Immediate priorities: product explainer videos, ORM audit framework, use-case landing pages, mini case studies, demo walkthrough env.</span><br><span class="item-when"><span class="src src-email">EMAIL</span> 20 May — Arun → founders → Jetin (STARRED)</span></div></td>
+  <td><div class="item-title">⛔ GTM positioning overhaul — vision-led → conversion-led website + product narrative separation<br><span class="item-detail">Arun's audit: (1) Website too abstract — no workflow demos, use-case clarity, ROI proof; logo wall is SMBs not enterprise. (2) Separate GTM funnels for Creative AI / ORM AI / Paid Ads AI with ICPs, use cases, vertical pages. (3) Asset gap: explainer videos, workflow GIFs, UI walkthroughs, comparison creatives. Immediate priorities: product explainer videos, ORM audit framework, use-case landing pages, mini case studies, demo walkthrough env.</span><br><span class="item-when"><span class="src src-email">EMAIL</span> 20 May — Arun → founders → Jetin (STARRED)</span></div></td>
   <td><span class="badge type-feat">Feature</span></td>
   <td><span class="badge p-high">High</span></td>
   <td><span class="owner own-jetin">Jetin</span></td>
@@ -280,8 +289,8 @@ footer { text-align:center; padding:18px; font-size:11px; color:var(--faint); bo
   <td><span class="badge type-infra">Infra</span></td>
   <td><span class="badge p-high">High</span></td>
   <td><span class="owner own-shared">Jetin + Prem</span></td>
-  <td><a href="https://linear.app/zocket-tech/issue/BRA-865/build-ui-for-meta-oauth-page-management" target="_blank" class="lin-link lin-ip">BRA-865</a><span class="lin-status">In Progress</span><br><a href="https://linear.app/zocket-tech/issue/BRA-866/refactor-meta-oauth-backend-flow" target="_blank" class="lin-link lin-done">BRA-866</a><span class="lin-status">Done</span></td><td class="proj-cell"><span class="proj-name">—</span></td>
-  <td><span class="badge s-ip">In Progress</span><div class="state-note">BRA-866 backend Done. BRA-865 FE In Progress → Archi.</div></td>
+  <td><a href="https://linear.app/zocket-tech/issue/BRA-865/build-ui-for-meta-oauth-page-management" target="_blank" class="lin-link lin-qa">BRA-865</a><span class="lin-status">Testing/QA ✓ updated</span><br><a href="https://linear.app/zocket-tech/issue/BRA-866/refactor-meta-oauth-backend-flow" target="_blank" class="lin-link lin-done">BRA-866</a><span class="lin-status">Done</span></td><td class="proj-cell"><span class="proj-name">—</span></td>
+  <td><span class="badge s-qa">Testing/QA</span><div class="state-note">BRA-866 backend Done. BRA-865 FE moved to Testing/QA → Archi. <em>Updated from Linear 22 May.</em></div></td>
 </tr><tr data-module="orm" data-owner="shared_prem" data-priority="high" data-status="ip" data-linear="yes">
   <td><div class="item-title">Twitter/X connector — auto-response for comments + DMs; phantom data fix in filters (BRA-857)<br><span class="item-detail">Unconnected platforms (Twitter, LinkedIn) still showing phantom data in filters. Twitter DMs interaction in progress.</span><br><span class="item-when"><span class="src src-slack">SLACK</span> 12–13 May #bata-orm-live</span></div></td>
   <td><span class="badge type-feat">Feature</span></td>
@@ -290,7 +299,7 @@ footer { text-align:center; padding:18px; font-size:11px; color:var(--faint); bo
   <td><a href="https://linear.app/zocket-tech/issue/BRA-857/twitter-dms-interaction" target="_blank" class="lin-link lin-ip">BRA-857</a><span class="lin-status">In Progress</span></td><td class="proj-cell"><span class="proj-name">Brand ORM — Brand Moderator</span></td>
   <td><span class="badge s-ip">In Progress</span><div class="state-note">BRA-712 Twitter OAuth Done. BRA-857 Twitter DMs In Progress.</div></td>
 </tr><tr data-module="orm" data-owner="shared_prem" data-priority="high" data-status="ip" data-linear="no">
-  <td><div class="item-title">Org-based skill + graph setup for Bata and Dabur in AI agent<br><span class="item-detail">Mukund's same-day urgent ask to Adrian + Abu: get inputs from Dhanush and set up graph + org-based skill for Bata and Dabur by end of 20 May. Tied to Brand Brain and Dabur governance.</span><br><span class="item-when"><span class="src src-slack">SLACK</span> 20 May #ai-designer</span></div></td>
+  <td><div class="item-title">⛔ Org-based skill + graph setup for Bata and Dabur in AI agent<br><span class="item-detail">Mukund's same-day urgent ask to Adrian + Abu: get inputs from Dhanush and set up graph + org-based skill for Bata and Dabur by end of 20 May. Tied to Brand Brain and Dabur governance.</span><br><span class="item-when"><span class="src src-slack">SLACK</span> 20 May #ai-designer</span></div></td>
   <td><span class="badge type-infra">Infra</span></td>
   <td><span class="badge p-high">High</span></td>
   <td><span class="owner own-shared">Jetin + Prem</span></td>
@@ -318,7 +327,7 @@ footer { text-align:center; padding:18px; font-size:11px; color:var(--faint); bo
   <td><a href="https://linear.app/zocket-tech/issue/BRA-371/translation-buttons-for-text-and-image-content-incl-manual-response" target="_blank" class="lin-link lin-done">BRA-371</a><span class="lin-status">Live</span></td><td class="proj-cell"><span class="proj-name">Brand Moderation</span></td>
   <td><span class="badge s-ip">In Progress</span><div class="state-note">BRA-365 Hinglish shipped 19 May. BRA-371 Translation Done. Language mismatch ongoing. No single consolidated ticket for remaining items.</div></td>
 </tr><tr data-module="orm" data-owner="prem" data-priority="high" data-status="todo" data-linear="no">
-  <td><div class="item-title">Bata bot filtering — ignore non-actionables; no DM-asks for closed queries; slang/username handling<br><span class="item-detail">Non-actionable comments (e.g. 'Happy birthday') should auto-move to Relevant with no auto-response. Simple closed-ended queries (e.g. 'When does the sale start?') get direct answer, no DM invitation. Informal usernames (e.g. 'itz_f4u') → 'Hi customer'. Slang fix ('discount my foot' → Query not Complaint).</span><br><span class="item-when"><span class="src src-email">EMAIL</span> 13 May Fathom recap</span></div></td>
+  <td><div class="item-title">⛔ Bata bot filtering — ignore non-actionables; no DM-asks for closed queries; slang/username handling<br><span class="item-detail">Non-actionable comments (e.g. 'Happy birthday') should auto-move to Relevant with no auto-response. Simple closed-ended queries (e.g. 'When does the sale start?') get direct answer, no DM invitation. Informal usernames (e.g. 'itz_f4u') → 'Hi customer'. Slang fix ('discount my foot' → Query not Complaint).</span><br><span class="item-when"><span class="src src-email">EMAIL</span> 13 May Fathom recap</span></div></td>
   <td><span class="badge type-bug">Bug</span></td>
   <td><span class="badge p-high">High</span></td>
   <td><span class="owner own-prem">Prem</span></td>
@@ -330,7 +339,7 @@ footer { text-align:center; padding:18px; font-size:11px; color:var(--faint); bo
   <td><span class="badge p-high">High</span></td>
   <td><span class="owner own-prem">Prem</span></td>
   <td><a href="https://linear.app/zocket-tech/issue/BRA-372/escalate-via-email-spoc-audience-intervention" target="_blank" class="lin-link lin-ip">BRA-372</a><span class="lin-status">In Progress</span><br><a href="https://linear.app/zocket-tech/issue/BRA-570/review-queue-thumbs-up-thumbs-down-on-ai-generated-replies" target="_blank" class="lin-link lin-open">BRA-570</a><span class="lin-status">Todo</span><br><a href="https://linear.app/zocket-tech/issue/BRA-572/review-queue-send-to-crm-shows-full-ticket-fields-and-success" target="_blank" class="lin-link lin-open">BRA-572</a><span class="lin-status">Backlog</span></td><td class="proj-cell"><span class="proj-name">Brand Moderation · Brand ORM — Brand Moderator</span></td>
-  <td><span class="badge s-ip">In Progress</span><div class="state-note">BRA-372 In Progress. BRA-570 + BRA-572 Todo/Backlog.</div></td>
+  <td><span class="badge s-todo">Backlog ⚠️</span><div class="state-note">BRA-372 regressed to Backlog (was In Progress). BRA-570 + BRA-572 Todo/Backlog. <em>Updated from Linear 22 May.</em></div></td>
 </tr><tr data-module="orm" data-owner="prem" data-priority="high" data-status="todo" data-linear="yes">
   <td><div class="item-title">DM metrics + queue visibility — DM/comment segregation in export; sent responses visible in main queue (BRA-598)<br><span class="item-detail">Agency can't see bot responses in main queue, causing duplication. Export needs DM/comment breakdown separately. Action History also needs DM metrics (BRA-598).</span><br><span class="item-when"><span class="src src-both">BOTH</span> 13 + 19 May Fathom + Otter</span></div></td>
   <td><span class="badge type-feat">Feature</span></td>
@@ -339,14 +348,14 @@ footer { text-align:center; padding:18px; font-size:11px; color:var(--faint); bo
   <td><a href="https://linear.app/zocket-tech/issue/BRA-598/action-history-add-dm-metrics-total-dms-avg-response-time-avg-ai" target="_blank" class="lin-link lin-open">BRA-598</a><span class="lin-status">Todo</span></td><td class="proj-cell"><span class="proj-name">Brand ORM — Brand Moderator</span></td>
   <td><span class="badge s-todo">Todo</span><div class="state-note">BRA-598 Action History DM metrics is Todo. Queue visibility not yet in Linear.</div></td>
 </tr><tr data-module="orm" data-owner="prem" data-priority="high" data-status="ip" data-linear="no">
-  <td><div class="item-title">EasyRewardz CRM classification integration + workflow statuses<br><span class="item-detail">Fetch classification from ER CRM directly; support statuses Resolved / Closed / Merged / Re-open / WIP. Ticket creation API at 0 vs ~115 expected — being investigated.</span><br><span class="item-when"><span class="src src-email">EMAIL</span> 7 May MOM</span></div></td>
+  <td><div class="item-title">⛔ EasyRewardz CRM classification integration + workflow statuses<br><span class="item-detail">Fetch classification from ER CRM directly; support statuses Resolved / Closed / Merged / Re-open / WIP. Ticket creation API at 0 vs ~115 expected — being investigated.</span><br><span class="item-when"><span class="src src-email">EMAIL</span> 7 May MOM</span></div></td>
   <td><span class="badge type-infra">Infra</span></td>
   <td><span class="badge p-high">High</span></td>
   <td><span class="owner own-prem">Prem</span></td>
   <td><span class="no-ticket">⚠️ No issue</span></td><td class="proj-cell">—</td>
   <td><span class="badge s-ip">In Progress</span><div class="state-note">ER ticket-creation API confirmed working both sides 1 May. CRM classification still in progress.</div></td>
 </tr><tr data-module="orm" data-owner="prem" data-priority="high" data-status="ip" data-linear="no">
-  <td><div class="item-title">Verify why approved auto-responses are not posting to social platforms<br><span class="item-detail">Ticket creation API at 0 (expected ~115). Related to EasyRewardz endpoint.</span><br><span class="item-when"><span class="src src-email">EMAIL</span> 13 May Fathom recap</span></div></td>
+  <td><div class="item-title">⛔ Verify why approved auto-responses are not posting to social platforms<br><span class="item-detail">Ticket creation API at 0 (expected ~115). Related to EasyRewardz endpoint.</span><br><span class="item-when"><span class="src src-email">EMAIL</span> 13 May Fathom recap</span></div></td>
   <td><span class="badge type-bug">Bug</span></td>
   <td><span class="badge p-high">High</span></td>
   <td><span class="owner own-prem">Prem</span></td>
@@ -367,7 +376,7 @@ footer { text-align:center; padding:18px; font-size:11px; color:var(--faint); bo
   <td><a href="https://linear.app/zocket-tech/issue/BRA-830/total-mentions-action-history" target="_blank" class="lin-link lin-qa">BRA-830</a><span class="lin-status">Awaiting Deployment</span><br><a href="https://linear.app/zocket-tech/issue/BRA-818/sub-brands-ai-consumer-research" target="_blank" class="lin-link lin-ip">BRA-818</a><span class="lin-status">In Progress</span><br><a href="https://linear.app/zocket-tech/issue/BRA-812/respond-to-collaborators" target="_blank" class="lin-link lin-qa">BRA-812</a><span class="lin-status">Testing/QA</span><br><a href="https://linear.app/zocket-tech/issue/BRA-862/show-dms-in-action-history-alongside-comments" target="_blank" class="lin-link lin-open">BRA-862</a><span class="lin-status">Todo</span></td><td class="proj-cell"><span class="proj-name">Brand ORM — Research & Insights</span></td>
   <td><span class="badge s-qa">In QA</span><div class="state-note">BRA-830 Awaiting Deployment → Aditi. BRA-818 In Progress → Ajay. BRA-812 Testing/QA → Prem. BRA-862 Todo.</div></td>
 </tr><tr data-module="creative" data-owner="shared_gayathri" data-priority="high" data-status="todo" data-linear="no">
-  <td><div class="item-title">Ambercomm creative rejection — fix pack-shot/proportion/blank-space inconsistencies across display sizes<br><span class="item-detail">Shynil Hashim (Ambercomm.ae) ran Zocket for 15 display ad sizes (120×600 → 1024×768) and formally rejected: 'inconsistencies in pack shots, product image, blank spaces — regenerating repeatedly is a drain.' Karthik to Mukund + Jetin: 'Connect with Arvind, understand the feedback.' Mukund held a 'Zocket Resizing Feedback' call 13 May with Arvind + Adrian — likely same theme.</span><br><span class="item-when"><span class="src src-email">EMAIL</span> 11 May — Karthik fwd to Mukund + Jetin</span></div></td>
+  <td><div class="item-title">⛔ Ambercomm creative rejection — fix pack-shot/proportion/blank-space inconsistencies across display sizes<br><span class="item-detail">Shynil Hashim (Ambercomm.ae) ran Zocket for 15 display ad sizes (120×600 → 1024×768) and formally rejected: 'inconsistencies in pack shots, product image, blank spaces — regenerating repeatedly is a drain.' Karthik to Mukund + Jetin: 'Connect with Arvind, understand the feedback.' Mukund held a 'Zocket Resizing Feedback' call 13 May with Arvind + Adrian — likely same theme.</span><br><span class="item-when"><span class="src src-email">EMAIL</span> 11 May — Karthik fwd to Mukund + Jetin</span></div></td>
   <td><span class="badge type-bug">Bug</span></td>
   <td><span class="badge p-high">High</span></td>
   <td><span class="owner own-shared">Jetin + Gayathri</span></td>
@@ -406,8 +415,8 @@ footer { text-align:center; padding:18px; font-size:11px; color:var(--faint); bo
   <td><span class="badge type-feat">Feature</span></td>
   <td><span class="badge p-high">High</span></td>
   <td><span class="owner own-gayathri">Gayathri</span></td>
-  <td><a href="https://linear.app/zocket-tech/issue/BRA-858/image-rescaling-uploads-fail-in-qa" target="_blank" class="lin-link lin-qa">BRA-858</a><span class="lin-status">Testing/QA</span></td><td class="proj-cell"><span class="proj-name">Creative Design</span></td>
-  <td><span class="badge s-qa">In QA</span><div class="state-note">BRA-858 Image rescaling uploads fail in QA → Testing/QA. Core resize tickets (BRA-835-855) Done.</div></td>
+  <td><a href="https://linear.app/zocket-tech/issue/BRA-858/image-rescaling-uploads-fail-in-qa" target="_blank" class="lin-link lin-done">BRA-858</a><span class="lin-status">Done ✓</span></td><td class="proj-cell"><span class="proj-name">Creative Design</span></td>
+  <td><span class="badge s-live">Done ✓</span><div class="state-note">BRA-858 Image rescaling Done (shipped!). Core resize tickets (BRA-835-855) also Done. <em>Updated from Linear 22 May.</em></div></td>
 </tr><tr data-module="creative" data-owner="gayathri" data-priority="high" data-status="todo" data-linear="yes">
   <td><div class="item-title">Quick-create shortcut — jump directly into creation flow (BRA-819)<br><span class="item-detail">Skip landing + concept selection steps. Adrian acknowledged ('can do but need UI improvement').</span><br><span class="item-when"><span class="src src-slack">SLACK</span> 2–22 Apr #ai-designer</span></div></td>
   <td><span class="badge type-imp">Improvement</span></td>
@@ -427,8 +436,8 @@ footer { text-align:center; padding:18px; font-size:11px; color:var(--faint); bo
   <td><span class="badge type-bug">Bug</span></td>
   <td><span class="badge p-high">High</span></td>
   <td><span class="owner own-gayathri">Gayathri</span></td>
-  <td><a href="https://linear.app/zocket-tech/issue/BRA-858/image-rescaling-uploads-fail-in-qa" target="_blank" class="lin-link lin-qa">BRA-858</a><span class="lin-status">Testing/QA</span></td><td class="proj-cell"><span class="proj-name">Creative Design</span></td>
-  <td><span class="badge s-qa">In QA</span><div class="state-note">BRA-858 Image rescaling uploads fail Testing/QA. Product mismatch flagged with chat link — Adrian checking.</div></td>
+  <td><a href="https://linear.app/zocket-tech/issue/BRA-858/image-rescaling-uploads-fail-in-qa" target="_blank" class="lin-link lin-done">BRA-858</a><span class="lin-status">Done ✓</span></td><td class="proj-cell"><span class="proj-name">Creative Design</span></td>
+  <td><span class="badge s-live">Done ✓</span><div class="state-note">BRA-858 Done (shipped). Product mismatch fix confirmed by Adrian. <em>Updated from Linear 22 May.</em></div></td>
 </tr><tr data-module="creative" data-owner="gayathri" data-priority="high" data-status="ip" data-linear="yes">
   <td><div class="item-title">Fix: voice/language inconsistency between scenes — Tanglish/Tamil mixing, AI narrative glitches, failed-to-load-voices error (BRA-860/861)<br><span class="item-detail">'Failed to load voices' still shown after voice selection. Language mismatch between scenes. BRA-861 language+quality fix Done. BRA-860 replace-voice error still Backlog.</span><br><span class="item-when"><span class="src src-slack">SLACK</span> 20 May #ai-designer</span></div></td>
   <td><span class="badge type-bug">Bug</span></td>
@@ -437,14 +446,14 @@ footer { text-align:center; padding:18px; font-size:11px; color:var(--faint); bo
   <td><a href="https://linear.app/zocket-tech/issue/BRA-860/replace-voice-shows-failed-to-load-voices-error" target="_blank" class="lin-link lin-open">BRA-860</a><span class="lin-status">Backlog</span><br><a href="https://linear.app/zocket-tech/issue/BRA-861/fix-language-switching-and-poor-video-quality-between-scenes" target="_blank" class="lin-link lin-done">BRA-861</a><span class="lin-status">Done</span></td><td class="proj-cell"><span class="proj-name">Video Flow Enhancements</span></td>
   <td><span class="badge s-ip">In Progress</span><div class="state-note">BRA-861 Done. BRA-860 Backlog. BRA-811 Tanglish → Tamil artifact Backlog.</div></td>
 </tr><tr data-module="creative" data-owner="gayathri" data-priority="med" data-status="todo" data-linear="no">
-  <td><div class="item-title">Fix: storyboard regeneration creates new concept instead of updating existing (tool call error in canvas)<br><span class="item-detail">On regeneration prompt, tool call error appears in canvas and a completely new concept is generated instead of updating the existing storyboard.</span><br><span class="item-when"><span class="src src-slack">SLACK</span> 20 May #ai-designer</span></div></td>
+  <td><div class="item-title">⛔ Fix: storyboard regeneration creates new concept instead of updating existing (tool call error in canvas)<br><span class="item-detail">On regeneration prompt, tool call error appears in canvas and a completely new concept is generated instead of updating the existing storyboard.</span><br><span class="item-when"><span class="src src-slack">SLACK</span> 20 May #ai-designer</span></div></td>
   <td><span class="badge type-bug">Bug</span></td>
   <td><span class="badge p-med">Med</span></td>
   <td><span class="owner own-gayathri">Gayathri</span></td>
   <td><span class="no-ticket">⚠️ No issue</span></td><td class="proj-cell">—</td>
   <td><span class="badge s-todo">Todo</span><div class="state-note">Reported 20 May. No ack from Adrian. No ticket.</div></td>
 </tr><tr data-module="creative" data-owner="gayathri" data-priority="med" data-status="todo" data-linear="no">
-  <td><div class="item-title">Fix: white text shadow on all generated creatives looks off<br><span class="item-detail">White shadow behind every text element. Multiple chat links shared by Gayathri.</span><br><span class="item-when"><span class="src src-slack">SLACK</span> 7 May #stablization-creative</span></div></td>
+  <td><div class="item-title">⛔ Fix: white text shadow on all generated creatives looks off<br><span class="item-detail">White shadow behind every text element. Multiple chat links shared by Gayathri.</span><br><span class="item-when"><span class="src src-slack">SLACK</span> 7 May #stablization-creative</span></div></td>
   <td><span class="badge type-bug">Bug</span></td>
   <td><span class="badge p-med">Med</span></td>
   <td><span class="owner own-gayathri">Gayathri</span></td>
@@ -458,7 +467,7 @@ footer { text-align:center; padding:18px; font-size:11px; color:var(--faint); bo
   <td><a href="https://linear.app/zocket-tech/issue/BRA-810/support-brand-guide-uploads-larger-than-200mb" target="_blank" class="lin-link lin-qa">BRA-810</a><span class="lin-status">Code Review</span></td><td class="proj-cell"><span class="proj-name">AI Designer Enhancements</span></td>
   <td><span class="badge s-ip">In Progress</span><div class="state-note">BRA-810 Code Review. BRA-816 (FE presigned URL upload) + BRA-817 (BE presigned URL gen) both Code Review.</div></td>
 </tr><tr data-module="creative" data-owner="shared_gayathri" data-priority="med" data-status="todo" data-linear="no">
-  <td><div class="item-title">Customer FAQ items for Creative AI — PSD export, custom typography/fonts, concept freshness/unlearn, T2V clarity, layout fix on translate+resize<br><span class="item-detail">Alo customer FAQs #8,10,11,12,13: Does it export PSD layered file? Custom typography/fonts? How does it 'unlearn' for fresh concepts? Text-to-video vs reference video? Does translate+resize fix typography/layout?</span><br><span class="item-when"><span class="src src-email">EMAIL</span> 20 May — Karthik (Alo FAQs)</span></div></td>
+  <td><div class="item-title">⛔ Customer FAQ items for Creative AI — PSD export, custom typography/fonts, concept freshness/unlearn, T2V clarity, layout fix on translate+resize<br><span class="item-detail">Alo customer FAQs #8,10,11,12,13: Does it export PSD layered file? Custom typography/fonts? How does it 'unlearn' for fresh concepts? Text-to-video vs reference video? Does translate+resize fix typography/layout?</span><br><span class="item-when"><span class="src src-email">EMAIL</span> 20 May — Karthik (Alo FAQs)</span></div></td>
   <td><span class="badge type-feat">Feature</span></td>
   <td><span class="badge p-med">Med</span></td>
   <td><span class="owner own-shared">Jetin + Gayathri</span></td>
@@ -495,9 +504,9 @@ footer { text-align:center; padding:18px; font-size:11px; color:var(--faint); bo
   <td><span class="badge p-high">High</span></td>
   <td><span class="owner own-jetin">Jetin</span></td>
   <td><a href="https://linear.app/zocket-tech/issue/BRA-826/daily-report-email" target="_blank" class="lin-link lin-open">BRA-826</a><span class="lin-status">Todo</span></td><td class="proj-cell"><span class="proj-name">Performance AI — Overview</span></td>
-  <td><span class="badge s-ip">In Progress</span><div class="state-note">BRA-826 Todo. Rokesh sharing templates. Schedule costs being analyzed.</div></td>
+  <td><span class="badge s-todo">Todo</span><div class="state-note">BRA-826 Todo (not started — Linear confirmed). Rokesh sharing templates. <em>Updated from Linear 22 May.</em></div></td>
 </tr><tr data-module="perf" data-owner="jetin" data-priority="high" data-status="ip" data-linear="no">
-  <td><div class="item-title">Croma custom report dashboard — city/PIN/zone views, Dark PIN logic, 14 zones, Top 10+Next 6 cities, offline lag<br><span class="item-detail">Hayden Mendonza (Croma) shared reporting template + zone classification 20 May email. 14 zones (BMR, Delhi NCR, HMR, MMR, Gujarat 1&2, etc.). Top 10 cities + Next 6 cities. Dark PIN Codes concept. 7–8 day offline conversion lag handling. Adobe Analytics + Power BI Phase 2/3. GMC feasibility. Rokesh shared report v1 draft to Jetin + Anshul 21 May. Sundar: 'prioritize — sign agreement and move to paid subscription.'</span><br><span class="item-when"><span class="src src-both">BOTH</span> 19–21 May #paidads-ai + email thread</span></div></td>
+  <td><div class="item-title">⛔ Croma custom report dashboard — city/PIN/zone views, Dark PIN logic, 14 zones, Top 10+Next 6 cities, offline lag<br><span class="item-detail">Hayden Mendonza (Croma) shared reporting template + zone classification 20 May email. 14 zones (BMR, Delhi NCR, HMR, MMR, Gujarat 1&2, etc.). Top 10 cities + Next 6 cities. Dark PIN Codes concept. 7–8 day offline conversion lag handling. Adobe Analytics + Power BI Phase 2/3. GMC feasibility. Rokesh shared report v1 draft to Jetin + Anshul 21 May. Sundar: 'prioritize — sign agreement and move to paid subscription.'</span><br><span class="item-when"><span class="src src-both">BOTH</span> 19–21 May #paidads-ai + email thread</span></div></td>
   <td><span class="badge type-feat">Feature</span></td>
   <td><span class="badge p-high">High</span></td>
   <td><span class="owner own-jetin">Jetin</span></td>
@@ -511,21 +520,21 @@ footer { text-align:center; padding:18px; font-size:11px; color:var(--faint); bo
   <td><a href="https://linear.app/zocket-tech/issue/BRA-756/build-the-credit-summary-cards-showing-balance-cycle-usage-and-reset" target="_blank" class="lin-link lin-open">BRA-756</a><span class="lin-status">Todo</span></td><td class="proj-cell"><span class="proj-name">Credit Usage: Dashboard & Visibility</span></td>
   <td><span class="badge s-qa">In QA</span><div class="state-note">BRA-756-760 all Todo. AB said 'live in QA' 9 May for credits module. Jetin review: minor fixes + recharge needed. Not in prod.</div></td>
 </tr><tr data-module="perf" data-owner="jetin" data-priority="high" data-status="todo" data-linear="no">
-  <td><div class="item-title">Custom reporting per customer (Customer FAQ #5) — don't want standard reports for all customers<br><span class="item-detail">Alo agency customer asked this directly. Exactly what Croma also needs. Should inform a platform-level custom reporting framework, not a Croma-only one-off.</span><br><span class="item-when"><span class="src src-email">EMAIL</span> 20 May — Karthik (Alo FAQs)</span></div></td>
+  <td><div class="item-title">⛔ Custom reporting per customer (Customer FAQ #5) — don't want standard reports for all customers<br><span class="item-detail">Alo agency customer asked this directly. Exactly what Croma also needs. Should inform a platform-level custom reporting framework, not a Croma-only one-off.</span><br><span class="item-when"><span class="src src-email">EMAIL</span> 20 May — Karthik (Alo FAQs)</span></div></td>
   <td><span class="badge type-feat">Feature</span></td>
   <td><span class="badge p-high">High</span></td>
   <td><span class="owner own-jetin">Jetin</span></td>
   <td><span class="no-ticket">⚠️ No issue</span></td><td class="proj-cell">—</td>
   <td><span class="badge s-todo">Todo</span><div class="state-note">No ticket. Validated by two separate customers. Convert Croma reporting effort into platform capability.</div></td>
 </tr><tr data-module="perf" data-owner="shared_jetin" data-priority="high" data-status="todo" data-linear="no">
-  <td><div class="item-title">Competitor benchmarking V3 — fresh approach for 5paisa + existing pilots<br><span class="item-detail">Sundar shared direction with Jetin 19 May via #5paisa-pilot.</span><br><span class="item-when"><span class="src src-slack">SLACK</span> 19 May #5paisa-pilot</span></div></td>
+  <td><div class="item-title">⛔ Competitor benchmarking V3 — fresh approach for 5paisa + existing pilots<br><span class="item-detail">Sundar shared direction with Jetin 19 May via #5paisa-pilot.</span><br><span class="item-when"><span class="src src-slack">SLACK</span> 19 May #5paisa-pilot</span></div></td>
   <td><span class="badge type-feat">Feature</span></td>
   <td><span class="badge p-high">High</span></td>
   <td><span class="owner own-shared">Jetin + Eng</span></td>
   <td><span class="no-ticket">⚠️ No issue</span></td><td class="proj-cell">—</td>
   <td><span class="badge s-todo">Todo</span><div class="state-note">BRA-714 Keyword research options to MCP was Canceled. No active ticket.</div></td>
 </tr><tr data-module="perf" data-owner="jetin" data-priority="high" data-status="todo" data-linear="no">
-  <td><div class="item-title">Onboarding hygiene — fix emails/comms showing Bacon branding post sign-up<br><span class="item-detail">Post sign-up emails still reference Bacon product. Mukund forwarded evidence from notification@trybacon.ai 20 May.</span><br><span class="item-when"><span class="src src-slack">SLACK</span> 30 Apr #paidads-ai</span></div></td>
+  <td><div class="item-title">⛔ Onboarding hygiene — fix emails/comms showing Bacon branding post sign-up<br><span class="item-detail">Post sign-up emails still reference Bacon product. Mukund forwarded evidence from notification@trybacon.ai 20 May.</span><br><span class="item-when"><span class="src src-slack">SLACK</span> 30 Apr #paidads-ai</span></div></td>
   <td><span class="badge type-bug">Bug</span></td>
   <td><span class="badge p-high">High</span></td>
   <td><span class="owner own-jetin">Jetin</span></td>
@@ -546,7 +555,7 @@ footer { text-align:center; padding:18px; font-size:11px; color:var(--faint); bo
   <td><a href="https://linear.app/zocket-tech/issue/BRA-616/metric-customization-drawer-with-persistent-layout" target="_blank" class="lin-link lin-open">BRA-616</a><span class="lin-status">Todo</span></td><td class="proj-cell"><span class="proj-name">Performance AI — Overview</span></td>
   <td><span class="badge s-todo">Todo</span><div class="state-note">BRA-616 Metric customization drawer with persistent layout Todo. Sidebar no ticket.</div></td>
 </tr><tr data-module="perf" data-owner="jetin" data-priority="high" data-status="todo" data-linear="no">
-  <td><div class="item-title">Fix: date filter not applying to all overview sections; 'What Changed' truncated<br><span class="item-detail">Date filter misses funnel metrics + priorities sections. 'What Changed' text truncated. 'Ask Zocket AI' should be off first fold.</span><br><span class="item-when"><span class="src src-slack">SLACK</span> May #paidads-ai</span></div></td>
+  <td><div class="item-title">⛔ Fix: date filter not applying to all overview sections; 'What Changed' truncated<br><span class="item-detail">Date filter misses funnel metrics + priorities sections. 'What Changed' text truncated. 'Ask Zocket AI' should be off first fold.</span><br><span class="item-when"><span class="src src-slack">SLACK</span> May #paidads-ai</span></div></td>
   <td><span class="badge type-bug">Bug</span></td>
   <td><span class="badge p-high">High</span></td>
   <td><span class="owner own-jetin">Jetin</span></td>
@@ -560,14 +569,14 @@ footer { text-align:center; padding:18px; font-size:11px; color:var(--faint); bo
   <td><a href="https://linear.app/zocket-tech/issue/BRA-702/google-analytics-oauth-backend-integration-ga4-connector-with-scope" target="_blank" class="lin-link lin-done">BRA-702</a><span class="lin-status">Live</span><br><a href="https://linear.app/zocket-tech/issue/BRA-703/google-analytics-oauth-integration-and-connectors-page-frontend" target="_blank" class="lin-link lin-done">BRA-703</a><span class="lin-status">Done</span></td><td class="proj-cell"><span class="proj-name">AI Paid Media</span></td>
   <td><span class="badge s-ip">In Progress</span><div class="state-note">BRA-702/703 Done. Current issue is forced re-auth for everyone post-migration.</div></td>
 </tr><tr data-module="perf" data-owner="jetin" data-priority="high" data-status="ip" data-linear="no">
-  <td><div class="item-title">EloElo Appsflyer integration — connect AF token + enable/disable per app<br><span class="item-detail">MCP Token shared by EloElo's Vijay 21 May via email (forwarded by Rokesh to Anshul + Jetin). EloElo onboarding completed (enable/disable per ad account implemented).</span><br><span class="item-when"><span class="src src-both">BOTH</span> 20–21 May #paidads-ai + email</span></div></td>
+  <td><div class="item-title">⛔ EloElo Appsflyer integration — connect AF token + enable/disable per app<br><span class="item-detail">MCP Token shared by EloElo's Vijay 21 May via email (forwarded by Rokesh to Anshul + Jetin). EloElo onboarding completed (enable/disable per ad account implemented).</span><br><span class="item-when"><span class="src src-both">BOTH</span> 20–21 May #paidads-ai + email</span></div></td>
   <td><span class="badge type-infra">Infra</span></td>
   <td><span class="badge p-high">High</span></td>
   <td><span class="owner own-jetin">Jetin</span></td>
   <td><span class="no-ticket">⚠️ No issue</span></td><td class="proj-cell">—</td>
   <td><span class="badge s-ip">In Progress</span><div class="state-note">No dedicated ticket. Token shared 21 May. Anshul working.</div></td>
 </tr><tr data-module="perf" data-owner="jetin" data-priority="high" data-status="ip" data-linear="no">
-  <td><div class="item-title">IIFL full-stack POC — Google Ads, Meta, Clevertap, Appsflyer, Zoho CRM, GA4; Retention AI + Creative Engine<br><span class="item-detail">IIFL Internal Clone workspace created 12 May. Google delinked 20 May (prod migration). Retention AI SOW 13 May. Creative Engine brief 8 May. Clevertap + Zoho CRM not started.</span><br><span class="item-when"><span class="src src-both">BOTH</span> 27 Apr – 20 May #paidads-ai + email</span></div></td>
+  <td><div class="item-title">⛔ IIFL full-stack POC — Google Ads, Meta, Clevertap, Appsflyer, Zoho CRM, GA4; Retention AI + Creative Engine<br><span class="item-detail">IIFL Internal Clone workspace created 12 May. Google delinked 20 May (prod migration). Retention AI SOW 13 May. Creative Engine brief 8 May. Clevertap + Zoho CRM not started.</span><br><span class="item-when"><span class="src src-both">BOTH</span> 27 Apr – 20 May #paidads-ai + email</span></div></td>
   <td><span class="badge type-infra">Infra</span></td>
   <td><span class="badge p-high">High</span></td>
   <td><span class="owner own-jetin">Jetin</span></td>
@@ -581,7 +590,7 @@ footer { text-align:center; padding:18px; font-size:11px; color:var(--faint); bo
   <td><a href="https://linear.app/zocket-tech/issue/BRA-754/add-per-account-unlink-action-in-linked-ad-accounts" target="_blank" class="lin-link lin-done">BRA-754</a><span class="lin-status">Done</span><br><a href="https://linear.app/zocket-tech/issue/BRA-394/fix-access-for-second-ad-account-without-mcc" target="_blank" class="lin-link lin-done">BRA-394</a><span class="lin-status">Done</span></td><td class="proj-cell"><span class="proj-name">AI Paid Media</span></td>
   <td><span class="badge s-live">Live</span><div class="state-note">BRA-754 Done. BRA-394 Done.</div></td>
 </tr><tr data-module="perf" data-owner="raghav" data-priority="high" data-status="todo" data-linear="no">
-  <td><div class="item-title">5paisa — use cases + Competitor Benchmarking (see Brand Intel module)<br><span class="item-detail">Cross-ref with Brand Intel #7 — use case mapping done by Raghav, direction to Jetin.</span><br><span class="item-when"><span class="src src-both">BOTH</span> 19 May</span></div></td>
+  <td><div class="item-title">⛔ 5paisa — use cases + Competitor Benchmarking (see Brand Intel module)<br><span class="item-detail">Cross-ref with Brand Intel #7 — use case mapping done by Raghav, direction to Jetin.</span><br><span class="item-when"><span class="src src-both">BOTH</span> 19 May</span></div></td>
   <td><span class="badge type-feat">Feature</span></td>
   <td><span class="badge p-high">High</span></td>
   <td><span class="owner own-raghav">Raghav 🔬</span></td>
@@ -634,49 +643,49 @@ footer { text-align:center; padding:18px; font-size:11px; color:var(--faint); bo
   <td><a href="https://linear.app/zocket-tech/issue/ZOC-91/show-payment-status-to-prevent-duplicate-subscription-charges" target="_blank" class="lin-link lin-open">ZOC-91</a><span class="lin-status">Todo</span></td><td class="proj-cell"><span class="proj-name">Zocket Legacy Support Tickets</span></td>
   <td><span class="badge s-blocked">Blocked</span><div class="state-note">Awaiting Jetin response. Customer relationship at risk. ZOC-91 partially addresses duplicate charge prevention.</div></td>
 </tr><tr data-module="legacy" data-owner="prem" data-priority="high" data-status="todo" data-linear="no">
-  <td><div class="item-title">SFL Ecom ad rejection — Elyxr, 7Stax, Secret Nature, 7oh (>20% rejection at $150K/account) + OH account disabled<br><span class="item-detail">Flagged in #alp-pouch. OH account disabled 21 May (Sahith). Compounding pattern for SFL accounts.</span><br><span class="item-when"><span class="src src-slack">SLACK</span> 14 Apr + 21 May #alp-pouch</span></div></td>
+  <td><div class="item-title">⛔ SFL Ecom ad rejection — Elyxr, 7Stax, Secret Nature, 7oh (>20% rejection at $150K/account) + OH account disabled<br><span class="item-detail">Flagged in #alp-pouch. OH account disabled 21 May (Sahith). Compounding pattern for SFL accounts.</span><br><span class="item-when"><span class="src src-slack">SLACK</span> 14 Apr + 21 May #alp-pouch</span></div></td>
   <td><span class="badge type-imp">Improvement</span></td>
   <td><span class="badge p-high">High</span></td>
   <td><span class="owner own-prem">Prem</span></td>
   <td><span class="no-ticket">⚠️ No issue</span></td><td class="proj-cell">—</td>
   <td><span class="badge s-todo">Todo</span><div class="state-note">No response or action from product team. Compounding SFL account issues.</div></td>
 </tr><tr data-module="team" data-owner="jetin" data-priority="high" data-status="todo" data-linear="no">
-  <td><div class="item-title">User management for Perf AI — workspace users + role controls<br><span class="item-detail">Mandatory before pilots go live. Anshul currently doing manual workspace creation per client.</span><br><span class="item-when"><span class="src src-slack">SLACK</span> 7 May #paidads-ai</span></div></td>
+  <td><div class="item-title">⛔ User management for Perf AI — workspace users + role controls<br><span class="item-detail">Mandatory before pilots go live. Anshul currently doing manual workspace creation per client.</span><br><span class="item-when"><span class="src src-slack">SLACK</span> 7 May #paidads-ai</span></div></td>
   <td><span class="badge type-feat">Feature</span></td>
   <td><span class="badge p-high">High</span></td>
   <td><span class="owner own-jetin">Jetin</span></td>
   <td><span class="no-ticket">⚠️ No issue</span></td><td class="proj-cell">—</td>
   <td><span class="badge s-todo">Todo</span><div class="state-note">No ticket.</div></td>
 </tr><tr data-module="team" data-owner="jetin" data-priority="high" data-status="todo" data-linear="no">
-  <td><div class="item-title">Saurabh API support — help configure Meta dev app with ads_management scope<br><span class="item-detail">Fathom recap 5 May: Prem to consult CTO + Jetin for approval; if approved, Aromal demos correct setup for Saurabh. Revenue upside: ₹30-40L → ₹2-3Cr/mo spend. No follow-up. Decision still pending.</span><br><span class="item-when"><span class="src src-email">EMAIL</span> 5 May Fathom 'Zocket X Saurabh'</span></div></td>
+  <td><div class="item-title">⛔ Saurabh API support — help configure Meta dev app with ads_management scope<br><span class="item-detail">Fathom recap 5 May: Prem to consult CTO + Jetin for approval; if approved, Aromal demos correct setup for Saurabh. Revenue upside: ₹30-40L → ₹2-3Cr/mo spend. No follow-up. Decision still pending.</span><br><span class="item-when"><span class="src src-email">EMAIL</span> 5 May Fathom 'Zocket X Saurabh'</span></div></td>
   <td><span class="badge type-infra">Infra</span></td>
   <td><span class="badge p-high">High</span></td>
   <td><span class="owner own-jetin">Jetin</span></td>
   <td><span class="no-ticket">⚠️ No issue</span></td><td class="proj-cell">—</td>
   <td><span class="badge s-todo">Todo</span><div class="state-note">No ticket. 8-10× revenue upside if approved.</div></td>
 </tr><tr data-module="team" data-owner="jetin" data-priority="med" data-status="todo" data-linear="no">
-  <td><div class="item-title">Perf AI sandbox with synthetic data for demos<br><span class="item-detail">Dabur got real client data (Zykaa + Heartfulness) as interim. Full synthetic data setup (neo4j + new MCPs) not built.</span><br><span class="item-when"><span class="src src-slack">SLACK</span> 30 Apr #paidads-ai</span></div></td>
+  <td><div class="item-title">⛔ Perf AI sandbox with synthetic data for demos<br><span class="item-detail">Dabur got real client data (Zykaa + Heartfulness) as interim. Full synthetic data setup (neo4j + new MCPs) not built.</span><br><span class="item-when"><span class="src src-slack">SLACK</span> 30 Apr #paidads-ai</span></div></td>
   <td><span class="badge type-feat">Feature</span></td>
   <td><span class="badge p-med">Med</span></td>
   <td><span class="owner own-jetin">Jetin</span></td>
   <td><span class="no-ticket">⚠️ No issue</span></td><td class="proj-cell">—</td>
   <td><span class="badge s-todo">Todo</span><div class="state-note">No ticket.</div></td>
 </tr><tr data-module="team" data-owner="jetin" data-priority="med" data-status="ip" data-linear="no">
-  <td><div class="item-title">LinkedIn organic content strategy — product knowledge doc for Richa<br><span class="item-detail">Richa working on Zocket LinkedIn strategy modelled on Higgsfield AI. Needs detailed product knowledge doc. Requested 12 May. AB redirected to Prem + Gayathri 13 May.</span><br><span class="item-when"><span class="src src-slack">SLACK</span> 12 May #linkedin-organic-zocketai</span></div></td>
+  <td><div class="item-title">⛔ LinkedIn organic content strategy — product knowledge doc for Richa<br><span class="item-detail">Richa working on Zocket LinkedIn strategy modelled on Higgsfield AI. Needs detailed product knowledge doc. Requested 12 May. AB redirected to Prem + Gayathri 13 May.</span><br><span class="item-when"><span class="src src-slack">SLACK</span> 12 May #linkedin-organic-zocketai</span></div></td>
   <td><span class="badge type-imp">Improvement</span></td>
   <td><span class="badge p-med">Med</span></td>
   <td><span class="owner own-jetin">Jetin</span></td>
   <td><span class="no-ticket">⚠️ No issue</span></td><td class="proj-cell">—</td>
   <td><span class="badge s-ip">In Progress</span><div class="state-note">No doc shared. No meeting confirmed.</div></td>
 </tr><tr data-module="team" data-owner="jetin" data-priority="med" data-status="todo" data-linear="no">
-  <td><div class="item-title">AI feedback agent — auto-analyse feedback + auto-create Linear issues with PRD<br><span class="item-detail">Proposed Feb 2026. No build. Pipedream integration in #product_feedback is broken (all 'undefined' issues in logs).</span><br><span class="item-when"><span class="src src-slack">SLACK</span> 26 Feb #product_feedback</span></div></td>
+  <td><div class="item-title">⛔ AI feedback agent — auto-analyse feedback + auto-create Linear issues with PRD<br><span class="item-detail">Proposed Feb 2026. No build. Pipedream integration in #product_feedback is broken (all 'undefined' issues in logs).</span><br><span class="item-when"><span class="src src-slack">SLACK</span> 26 Feb #product_feedback</span></div></td>
   <td><span class="badge type-feat">Feature</span></td>
   <td><span class="badge p-med">Med</span></td>
   <td><span class="owner own-jetin">Jetin</span></td>
   <td><span class="no-ticket">⚠️ No issue</span></td><td class="proj-cell">—</td>
   <td><span class="badge s-todo">Todo</span><div class="state-note">No ticket.</div></td>
 </tr><tr data-module="team" data-owner="jetin" data-priority="high" data-status="live" data-linear="no">
-  <td><div class="item-title">Collab feature in Perf AI dashboards — @mentions, comments bar<br><span class="item-detail">Anshul deployed collab + deep-dive on sharable links 20 Apr. @mention email notifications added.</span><br><span class="item-when"><span class="src src-slack">SLACK</span> 15 Apr #paidads-ai</span></div></td>
+  <td><div class="item-title">⛔ Collab feature in Perf AI dashboards — @mentions, comments bar<br><span class="item-detail">Anshul deployed collab + deep-dive on sharable links 20 Apr. @mention email notifications added.</span><br><span class="item-when"><span class="src src-slack">SLACK</span> 15 Apr #paidads-ai</span></div></td>
   <td><span class="badge type-feat">Feature</span></td>
   <td><span class="badge p-high">High</span></td>
   <td><span class="owner own-jetin">Jetin</span></td>
@@ -701,14 +710,14 @@ footer { text-align:center; padding:18px; font-size:11px; color:var(--faint); bo
   <th>State</th>
 </tr></thead>
 <tbody><tr data-module="integrations" data-owner="jetin" data-priority="med" data-status="todo" data-linear="no">
-  <td><div class="item-title">Social publishing connectors — post generated creatives to Instagram/FB/X/LinkedIn (Customer FAQ #3)<br><span class="item-detail">Alo customer asked: 'What all connectors do you have to post generated images/videos to social platforms?' Tied to LinkedIn connector + Ayrshare but broader publishing scope.</span><br><span class="item-when"><span class="src src-email">EMAIL</span> 20 May — Karthik (Alo FAQs)</span></div></td>
+  <td><div class="item-title">⛔ Social publishing connectors — post generated creatives to Instagram/FB/X/LinkedIn (Customer FAQ #3)<br><span class="item-detail">Alo customer asked: 'What all connectors do you have to post generated images/videos to social platforms?' Tied to LinkedIn connector + Ayrshare but broader publishing scope.</span><br><span class="item-when"><span class="src src-email">EMAIL</span> 20 May — Karthik (Alo FAQs)</span></div></td>
   <td><span class="badge type-feat">Feature</span></td>
   <td><span class="badge p-med">Med</span></td>
   <td><span class="owner own-jetin">Jetin</span></td>
   <td><span class="no-ticket">⚠️ No issue</span></td><td class="proj-cell">—</td>
   <td><span class="badge s-todo">Todo</span><div class="state-note">No ticket.</div></td>
 </tr><tr data-module="integrations" data-owner="jetin" data-priority="med" data-status="ip" data-linear="no">
-  <td><div class="item-title">Semrush API — keyword + competitor analysis for Perf AI<br><span class="item-detail">Anshul added free Google keyword search 16 May. Semrush API key requested from Arun. Not integrated. BRA-714 was 'Add keyword research options to MCP' — Canceled.</span><br><span class="item-when"><span class="src src-slack">SLACK</span> 16 May #paidads-ai</span></div></td>
+  <td><div class="item-title">⛔ Semrush API — keyword + competitor analysis for Perf AI<br><span class="item-detail">Anshul added free Google keyword search 16 May. Semrush API key requested from Arun. Not integrated. BRA-714 was 'Add keyword research options to MCP' — Canceled.</span><br><span class="item-when"><span class="src src-slack">SLACK</span> 16 May #paidads-ai</span></div></td>
   <td><span class="badge type-feat">Feature</span></td>
   <td><span class="badge p-med">Med</span></td>
   <td><span class="owner own-jetin">Jetin</span></td>
@@ -722,7 +731,7 @@ footer { text-align:center; padding:18px; font-size:11px; color:var(--faint); bo
   <td><a href="https://linear.app/zocket-tech/issue/BRA-702/google-analytics-oauth-backend-integration-ga4-connector-with-scope" target="_blank" class="lin-link lin-done">BRA-702</a><span class="lin-status">Live</span></td><td class="proj-cell"><span class="proj-name">AI Paid Media</span></td>
   <td><span class="badge s-ip">In Progress</span><div class="state-note">BRA-702/703 Done. Property list UI pending.</div></td>
 </tr><tr data-module="integrations" data-owner="jetin" data-priority="high" data-status="todo" data-linear="no">
-  <td><div class="item-title">Clevertap + Zoho CRM — IIFL full-stack POC requirement<br><span class="item-detail">Not started. Blocked until Google/Meta core relinking resolved post prod migration.</span><br><span class="item-when"><span class="src src-slack">SLACK</span> 27 Apr #paidads-ai</span></div></td>
+  <td><div class="item-title">⛔ Clevertap + Zoho CRM — IIFL full-stack POC requirement<br><span class="item-detail">Not started. Blocked until Google/Meta core relinking resolved post prod migration.</span><br><span class="item-when"><span class="src src-slack">SLACK</span> 27 Apr #paidads-ai</span></div></td>
   <td><span class="badge type-feat">Feature</span></td>
   <td><span class="badge p-high">High</span></td>
   <td><span class="owner own-jetin">Jetin</span></td>
@@ -736,7 +745,7 @@ footer { text-align:center; padding:18px; font-size:11px; color:var(--faint); bo
   <td><a href="https://linear.app/zocket-tech/issue/BRA-394/fix-access-for-second-ad-account-without-mcc" target="_blank" class="lin-link lin-done">BRA-394</a><span class="lin-status">Done</span></td><td class="proj-cell"><span class="proj-name">AI Paid Media</span></td>
   <td><span class="badge s-live">Live</span><div class="state-note">BRA-394 Done.</div></td>
 </tr><tr data-module="integrations" data-owner="jetin" data-priority="med" data-status="todo" data-linear="no">
-  <td><div class="item-title">Enable/disable individual agents toggle + tags per workspace<br><span class="item-detail">In Linear ticket set by Anshul. No progress.</span><br><span class="item-when"><span class="src src-slack">SLACK</span> 8 May #paidads-ai</span></div></td>
+  <td><div class="item-title">⛔ Enable/disable individual agents toggle + tags per workspace<br><span class="item-detail">In Linear ticket set by Anshul. No progress.</span><br><span class="item-when"><span class="src src-slack">SLACK</span> 8 May #paidads-ai</span></div></td>
   <td><span class="badge type-feat">Feature</span></td>
   <td><span class="badge p-med">Med</span></td>
   <td><span class="owner own-jetin">Jetin</span></td>
@@ -771,7 +780,7 @@ footer { text-align:center; padding:18px; font-size:11px; color:var(--faint); bo
   <td><a href="https://linear.app/zocket-tech/issue/BRA-859/brand-os-payment-system-migrate-existing-to-zoho-pay-usd-razorpay-inr" target="_blank" class="lin-link lin-open">BRA-859</a><span class="lin-status">Todo</span></td><td class="proj-cell"><span class="proj-name">Brand Intel</span></td>
   <td><span class="badge s-todo">Todo</span><div class="state-note">BRA-859 Todo High covers payment migration. Coupon code specifically not in Linear.</div></td>
 </tr><tr data-module="settings" data-owner="jetin" data-priority="med" data-status="live" data-linear="no">
-  <td><div class="item-title">Zoho Billing — USD subscriptions live; monitor<br><span class="item-detail">Live for USD 24 Apr. Subscribe/upgrade/downgrade/add-ons/custom plans working.</span><br><span class="item-when"><span class="src src-slack">SLACK</span> 24 Apr #product-updates</span></div></td>
+  <td><div class="item-title">⛔ Zoho Billing — USD subscriptions live; monitor<br><span class="item-detail">Live for USD 24 Apr. Subscribe/upgrade/downgrade/add-ons/custom plans working.</span><br><span class="item-when"><span class="src src-slack">SLACK</span> 24 Apr #product-updates</span></div></td>
   <td><span class="badge type-infra">Infra</span></td>
   <td><span class="badge p-med">Med</span></td>
   <td><span class="owner own-jetin">Jetin</span></td>
@@ -796,35 +805,35 @@ footer { text-align:center; padding:18px; font-size:11px; color:var(--faint); bo
   <th>State</th>
 </tr></thead>
 <tbody><tr data-module="others" data-owner="jetin" data-priority="high" data-status="todo" data-linear="no">
-  <td><div class="item-title">Conversion assets package — product explainer videos, workflow GIFs, ORM audit framework, use-case landing pages, mini case studies, demo walkthrough environment<br><span class="item-detail">Arun's GTM audit identified conversion-driving assets as biggest enterprise-trust gap. Product's part: demo walkthrough env + workflow GIFs. Arun's team: explainer videos + case studies. Coordinate with Arun to execute. Reference sites: Rippling, Hootsuite, Sprinklr, Pixis, Notion, Canva Enterprise.</span><br><span class="item-when"><span class="src src-email">EMAIL</span> 20 May — Arun GTM audit fwd to Jetin (STARRED)</span></div></td>
+  <td><div class="item-title">⛔ Conversion assets package — product explainer videos, workflow GIFs, ORM audit framework, use-case landing pages, mini case studies, demo walkthrough environment<br><span class="item-detail">Arun's GTM audit identified conversion-driving assets as biggest enterprise-trust gap. Product's part: demo walkthrough env + workflow GIFs. Arun's team: explainer videos + case studies. Coordinate with Arun to execute. Reference sites: Rippling, Hootsuite, Sprinklr, Pixis, Notion, Canva Enterprise.</span><br><span class="item-when"><span class="src src-email">EMAIL</span> 20 May — Arun GTM audit fwd to Jetin (STARRED)</span></div></td>
   <td><span class="badge type-feat">Feature</span></td>
   <td><span class="badge p-high">High</span></td>
   <td><span class="owner own-jetin">Jetin</span></td>
   <td><span class="no-ticket">⚠️ No issue</span></td><td class="proj-cell">—</td>
   <td><span class="badge s-todo">Todo</span><div class="state-note">No ticket. Arun offered execution roadmap session. No follow-up.</div></td>
 </tr><tr data-module="others" data-owner="raghav" data-priority="med" data-status="todo" data-linear="no">
-  <td><div class="item-title">Competitive positioning vs Freepik AI / Midjourney / Sprout Social / Semrush / Zapier (Customer FAQs #1,2,17,18)<br><span class="item-detail">Alo customer asked: How is Zocket different from Freepik AI and Midjourney? Can we replace Sprout Social? What tools does Zocket replace? Output needed: comparison battlecards + competitor matrix. Good task for Raghav to research first pass.</span><br><span class="item-when"><span class="src src-email">EMAIL</span> 20 May — Karthik (Alo FAQs)</span></div></td>
+  <td><div class="item-title">⛔ Competitive positioning vs Freepik AI / Midjourney / Sprout Social / Semrush / Zapier (Customer FAQs #1,2,17,18)<br><span class="item-detail">Alo customer asked: How is Zocket different from Freepik AI and Midjourney? Can we replace Sprout Social? What tools does Zocket replace? Output needed: comparison battlecards + competitor matrix. Good task for Raghav to research first pass.</span><br><span class="item-when"><span class="src src-email">EMAIL</span> 20 May — Karthik (Alo FAQs)</span></div></td>
   <td><span class="badge type-feat">Feature</span></td>
   <td><span class="badge p-med">Med</span></td>
   <td><span class="owner own-raghav">Raghav 🔬</span></td>
   <td><span class="no-ticket">⚠️ No issue</span></td><td class="proj-cell">—</td>
   <td><span class="badge s-todo">Todo</span><div class="state-note">No ticket. First pass: Raghav research. Then Jetin reviews positioning.</div></td>
 </tr><tr data-module="others" data-owner="jetin" data-priority="med" data-status="ip" data-linear="no">
-  <td><div class="item-title">CreativeAI GTM — US outbound via Digital Sales Labs / Oleg<br><span class="item-detail">SOW not yet finalized. Arun to push Oleg.</span><br><span class="item-when"><span class="src src-slack">SLACK</span> 16 Apr #creativeai-gtm</span></div></td>
+  <td><div class="item-title">⛔ CreativeAI GTM — US outbound via Digital Sales Labs / Oleg<br><span class="item-detail">SOW not yet finalized. Arun to push Oleg.</span><br><span class="item-when"><span class="src src-slack">SLACK</span> 16 Apr #creativeai-gtm</span></div></td>
   <td><span class="badge type-feat">Feature</span></td>
   <td><span class="badge p-med">Med</span></td>
   <td><span class="owner own-jetin">Jetin</span></td>
   <td><span class="no-ticket">⚠️ No issue</span></td><td class="proj-cell">—</td>
   <td><span class="badge s-ip">In Progress</span><div class="state-note">In progress. No ticket.</div></td>
 </tr><tr data-module="others" data-owner="jetin" data-priority="med" data-status="ip" data-linear="no">
-  <td><div class="item-title">LinkedIn Zocket AI organic page — product knowledge doc + strategy (modelled on Higgsfield AI)<br><span class="item-detail">Richa working on strategy. Needs detailed product feature + workflow doc to write scripts and posts.</span><br><span class="item-when"><span class="src src-slack">SLACK</span> 12 May #linkedin-organic-zocketai</span></div></td>
+  <td><div class="item-title">⛔ LinkedIn Zocket AI organic page — product knowledge doc + strategy (modelled on Higgsfield AI)<br><span class="item-detail">Richa working on strategy. Needs detailed product feature + workflow doc to write scripts and posts.</span><br><span class="item-when"><span class="src src-slack">SLACK</span> 12 May #linkedin-organic-zocketai</span></div></td>
   <td><span class="badge type-imp">Improvement</span></td>
   <td><span class="badge p-med">Med</span></td>
   <td><span class="owner own-jetin">Jetin</span></td>
   <td><span class="no-ticket">⚠️ No issue</span></td><td class="proj-cell">—</td>
   <td><span class="badge s-ip">In Progress</span><div class="state-note">No doc shared. Prem + Gayathri to provide context.</div></td>
 </tr><tr data-module="others" data-owner="jetin" data-priority="low" data-status="live" data-linear="no">
-  <td><div class="item-title">Call recordings for all CreativeAI demo calls — Fathom setup<br><span class="item-detail">Karthik V confirmed Fathom already records all demo calls.</span><br><span class="item-when"><span class="src src-slack">SLACK</span> 13 Apr #creativeai-gtm</span></div></td>
+  <td><div class="item-title">⛔ Call recordings for all CreativeAI demo calls — Fathom setup<br><span class="item-detail">Karthik V confirmed Fathom already records all demo calls.</span><br><span class="item-when"><span class="src src-slack">SLACK</span> 13 Apr #creativeai-gtm</span></div></td>
   <td><span class="badge type-imp">Improvement</span></td>
   <td><span class="badge p-low">Low</span></td>
   <td><span class="owner own-jetin">Jetin</span></td>
@@ -846,7 +855,7 @@ footer { text-align:center; padding:18px; font-size:11px; color:var(--faint); bo
   LinkedIn scope → talk to Nandha (Otter action item)
 </div>
 
-<footer>80 items · 9 modules · Sources: 14 Slack channels + ~150 Gmail threads + 250 Linear issues cross-referenced · States as of 22 May 2026 · Items older than 3 months removed</footer>
+<footer>80 items · 9 modules · 41 with Linear tickets · 39 missing tickets · 6 status deltas · Updated 22 May 2026 08:00 IST · Filterable view: <a href="https://jetinzocket.github.io/backlog-live/">https://jetinzocket.github.io/backlog-live/</a></footer>
 
 <script>
 function applyFilters() {
