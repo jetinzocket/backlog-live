@@ -24,10 +24,14 @@ export interface WorkflowPRD {
   wiki_path: string
   drive_url: string
   created_at: string
+  content?: string
 }
 
-export interface WorkflowFigma {
-  url: string
+export interface WorkflowFigr {
+  url?: string
+  drive_url?: string
+  spec_content?: string
+  created_at?: string
 }
 
 export interface WorkflowTicket {
@@ -37,7 +41,7 @@ export interface WorkflowTicket {
 
 export interface Workflow {
   prd?: WorkflowPRD
-  figma?: WorkflowFigma
+  figr?: WorkflowFigr
   tickets?: WorkflowTicket[]
 }
 

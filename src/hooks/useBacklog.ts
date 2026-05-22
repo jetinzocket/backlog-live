@@ -60,7 +60,7 @@ const DEMO_ITEMS: BacklogItem[] = [
     suggested_due: '2026-06-15',
     roadmap_quarter: 'Q2 2026',
     roadmap_notes: null,
-    workflow: { prd: { wiki_path: 'wiki/prds/ai-video-gen.md', drive_url: '#', created_at: '2026-04-10' } },
+    workflow: { prd: { wiki_path: 'wiki/prds/ai-video-gen.md', drive_url: 'https://drive.google.com/drive/folders/1jl0idgmxGn3kncuf8oIf5yQZnv2dBAYP', created_at: '2026-04-10', content: '# PRD: AI Video Generation\n\nDemo content.' } },
     manually_overridden: false,
     last_linear_sync: null,
     created_at: new Date().toISOString(),

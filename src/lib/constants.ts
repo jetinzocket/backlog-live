@@ -79,3 +79,8 @@ export const ALL_PRIORITIES: Priority[] = ['high', 'med', 'low']
 
 // Meta API deadline: June 9, 2026
 export const META_API_DEADLINE = new Date('2026-06-09')
+
+// Shared Google Drive folders (Zocket Backlog → PRDs / Figr Specs)
+export const DRIVE_FOLDER_ROOT  = 'https://drive.google.com/drive/folders/1HEgr4rkFTWZaCq2-wFWXDyonxZGq8MLT'
+export const DRIVE_FOLDER_PRDS  = 'https://drive.google.com/drive/folders/1jl0idgmxGn3kncuf8oIf5yQZnv2dBAYP'
+export const DRIVE_FOLDER_FIGR  = 'https://drive.google.com/drive/folders/1VU8xCkvfwMbkyxNFXR1MUMG77LvAPjVz'
