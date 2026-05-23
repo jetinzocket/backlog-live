@@ -20,14 +20,11 @@ VALUES
 ),
 
 -- 2. Brand guide upload size limit
-(
-  'Support large brand guide uploads (>200MB)',
-  'Brand guides from enterprise clients frequently exceed the current 200MB upload limit. Need a workaround — chunked upload, Google Drive link input, or increased limit.',
-  'creative', 'gayathri', 'high', 'new',
-  '{}', false, NULL, 'Q2 2026', 'Blocking Bata, Dabur onboarding.',
-  '{}', false, 'slack', 'Dhanush Kumar', '2026-05-17',
-  'Slack #ai-designer: "Facing issue while uploading the brand guide (file size is larger 200MB)"'
-),
+-- NOTE: Already exists in Linear as BRA-810 — update source/context on the existing row instead
+-- UPDATE backlog_items SET source='slack', requested_by='Dhanush Kumar', requested_at='2026-05-17',
+--   request_context='Slack #ai-designer: "Facing issue while uploading the brand guide (file size is larger 200MB)"'
+-- WHERE linear_id = 'BRA-810';
+-- (skipped as INSERT to avoid duplicate)
 
 -- 3. Skip concept selection for batch generation
 (
