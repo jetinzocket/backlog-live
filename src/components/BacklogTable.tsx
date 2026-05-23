@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from 'react'
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 import type { BacklogItem, Module } from '@/lib/types'
 import { MODULE_SHORT, MODULE_COLORS, OWNER_COLORS } from '@/lib/constants'
 import StatusBadge from './StatusBadge'
@@ -22,6 +23,7 @@ const PRIORITY_ORDER = { high: 0, med: 1, low: 2 }
 const STATUS_ORDER = { blocked: 0, ip: 1, qa: 2, todo: 3, new: 4, live: 5 }
 
 export default function BacklogTable({ items, loading, onItemUpdate }: Props) {
+  const router = useRouter()
   const [sortKey, setSortKey] = useState<SortKey>('priority')
   const [sortDir, setSortDir] = useState<SortDir>('asc')
 
@@ -102,7 +104,7 @@ export default function BacklogTable({ items, loading, onItemUpdate }: Props) {
             <tr
               key={item.id}
               className="hover:bg-white/80 cursor-pointer group transition-colors"
-              onClick={() => window.location.href = `/item/${item.id}`}
+              onClick={() => router.push(`/item/${item.id}`)}
             >
               <td className="py-3 px-3 max-w-xs">
                 <span className="font-medium text-gray-900 group-hover:text-primary line-clamp-2 leading-snug">
