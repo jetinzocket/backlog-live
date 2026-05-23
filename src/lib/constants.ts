@@ -1,4 +1,4 @@
-import type { Module, Owner, Status, Priority } from './types'
+import type { Module, Owner, Status, Priority, ItemSource } from './types'
 
 export const MODULE_MAP: Record<Module, string> = {
   bi: 'Brand Intelligence & Governance',
@@ -64,6 +64,20 @@ export const PRIORITY_MAP: Record<Priority, { label: string; className: string }
   med: { label: 'Med', className: 'bg-amber-50 text-amber-700' },
   low: { label: 'Low', className: 'bg-gray-100 text-gray-500' },
 }
+
+export const SOURCE_MAP: Record<ItemSource, { label: string; className: string; icon: string }> = {
+  slack: { label: 'Slack', className: 'bg-purple-50 text-purple-700', icon: '💬' },
+  linear: { label: 'Linear', className: 'bg-indigo-50 text-indigo-700', icon: '🎯' },
+  'customer-call': { label: 'Customer call', className: 'bg-blue-50 text-blue-700', icon: '📞' },
+  internal: { label: 'Internal', className: 'bg-gray-100 text-gray-600', icon: '🏠' },
+  email: { label: 'Email', className: 'bg-teal-50 text-teal-700', icon: '✉️' },
+  gtm: { label: 'GTM / Sales', className: 'bg-orange-50 text-orange-700', icon: '🚀' },
+  other: { label: 'Other', className: 'bg-slate-50 text-slate-600', icon: '📌' },
+}
+
+export const ALL_SOURCES: ItemSource[] = [
+  'slack', 'linear', 'customer-call', 'internal', 'email', 'gtm', 'other',
+]
 
 export const ROADMAP_QUARTERS = ['Q2 2026', 'Q3 2026', 'Q4 2026']
 

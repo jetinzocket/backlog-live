@@ -25,6 +25,10 @@ const DEMO_ITEMS: BacklogItem[] = [
     last_linear_sync: null,
     created_at: new Date().toISOString(),
     updated_at: new Date().toISOString(),
+    source: 'linear',
+    requested_by: 'Jetin',
+    requested_at: '2026-04-01',
+    request_context: null,
   },
   {
     id: 'demo-2',
@@ -45,6 +49,10 @@ const DEMO_ITEMS: BacklogItem[] = [
     last_linear_sync: null,
     created_at: new Date().toISOString(),
     updated_at: new Date().toISOString(),
+    source: 'customer-call',
+    requested_by: 'Croma team',
+    requested_at: '2026-04-15',
+    request_context: null,
   },
   {
     id: 'demo-3',
@@ -65,6 +73,10 @@ const DEMO_ITEMS: BacklogItem[] = [
     last_linear_sync: null,
     created_at: new Date().toISOString(),
     updated_at: new Date().toISOString(),
+    source: 'internal',
+    requested_by: 'Gayathri',
+    requested_at: '2026-03-20',
+    request_context: null,
   },
   {
     id: 'demo-4',
@@ -85,6 +97,10 @@ const DEMO_ITEMS: BacklogItem[] = [
     last_linear_sync: null,
     created_at: new Date().toISOString(),
     updated_at: new Date().toISOString(),
+    source: 'customer-call',
+    requested_by: 'Croma',
+    requested_at: '2026-04-05',
+    request_context: null,
   },
   {
     id: 'demo-5',
@@ -105,6 +121,10 @@ const DEMO_ITEMS: BacklogItem[] = [
     last_linear_sync: null,
     created_at: new Date().toISOString(),
     updated_at: new Date().toISOString(),
+    source: 'internal',
+    requested_by: 'Jetin',
+    requested_at: '2026-04-10',
+    request_context: null,
   },
   {
     id: 'demo-6',
@@ -125,6 +145,10 @@ const DEMO_ITEMS: BacklogItem[] = [
     last_linear_sync: null,
     created_at: new Date().toISOString(),
     updated_at: new Date().toISOString(),
+    source: 'customer-call',
+    requested_by: 'Croma IT',
+    requested_at: '2026-05-01',
+    request_context: null,
   },
 ]
 
@@ -169,6 +193,13 @@ export function applyFilters(items: BacklogItem[], filters: FilterState): Backlo
     if (filters.customer) {
       const q = filters.customer.toLowerCase()
       if (!item.customers.some(c => c.toLowerCase().includes(q))) return false
+    }
+    if (filters.sources.length > 0) {
+      if (!item.source || !filters.sources.includes(item.source)) return false
+    }
+    if (filters.requestedBy) {
+      const q = filters.requestedBy.toLowerCase()
+      if (!item.requested_by?.toLowerCase().includes(q)) return false
     }
     return true
   })

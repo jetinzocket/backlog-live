@@ -5,8 +5,11 @@ import BacklogTable from '@/components/BacklogTable'
 import MultiSelectFilter from '@/components/MultiSelectFilter'
 import { useBacklog, applyFilters } from '@/hooks/useBacklog'
 import { isSupabaseConfigured } from '@/lib/supabase'
-import { MODULE_MAP, ALL_MODULES, ALL_OWNERS, ALL_STATUSES, ALL_PRIORITIES, STATUS_MAP, PRIORITY_MAP } from '@/lib/constants'
-import type { FilterState, BacklogItem, Module, Owner, Status, Priority } from '@/lib/types'
+import {
+  MODULE_MAP, ALL_MODULES, ALL_OWNERS, ALL_STATUSES, ALL_PRIORITIES,
+  ALL_SOURCES, STATUS_MAP, PRIORITY_MAP, SOURCE_MAP,
+} from '@/lib/constants'
+import type { FilterState, BacklogItem, Module, Owner, Status, Priority, ItemSource } from '@/lib/types'
 
 const DEFAULT_FILTERS: FilterState = {
   modules: [],
@@ -15,6 +18,8 @@ const DEFAULT_FILTERS: FilterState = {
   statuses: [],
   hasTicket: 'all',
   customer: '',
+  sources: [],
+  requestedBy: '',
 }
 
 export default function BacklogPage() {
@@ -28,8 +33,10 @@ export default function BacklogPage() {
     filters.owners.length +
     filters.priorities.length +
     filters.statuses.length +
+    filters.sources.length +
     (filters.hasTicket !== 'all' ? 1 : 0) +
-    (filters.customer ? 1 : 0)
+    (filters.customer ? 1 : 0) +
+    (filters.requestedBy ? 1 : 0)
 
   function clearAll() { setFilters(DEFAULT_FILTERS) }
 
@@ -79,6 +86,12 @@ export default function BacklogPage() {
             selected={filters.statuses}
             onChange={vals => setFilters(f => ({ ...f, statuses: vals as Status[] }))}
           />
+          <MultiSelectFilter
+            label="Source"
+            options={ALL_SOURCES.map(s => ({ value: s, label: `${SOURCE_MAP[s].icon} ${SOURCE_MAP[s].label}` }))}
+            selected={filters.sources}
+            onChange={vals => setFilters(f => ({ ...f, sources: vals as ItemSource[] }))}
+          />
 
           {/* Has Ticket */}
           <select
@@ -101,6 +114,15 @@ export default function BacklogPage() {
             value={filters.customer}
             onChange={e => setFilters(f => ({ ...f, customer: e.target.value }))}
             placeholder="Search customer…"
+            className="px-3 py-1.5 text-sm rounded-lg border border-gray-200 bg-white hover:border-gray-300 focus:border-primary focus:outline-none w-36"
+          />
+
+          {/* Requested by */}
+          <input
+            type="text"
+            value={filters.requestedBy}
+            onChange={e => setFilters(f => ({ ...f, requestedBy: e.target.value }))}
+            placeholder="Requested by…"
             className="px-3 py-1.5 text-sm rounded-lg border border-gray-200 bg-white hover:border-gray-300 focus:border-primary focus:outline-none w-36"
           />
 
@@ -141,6 +163,12 @@ export default function BacklogPage() {
                 <button onClick={() => setFilters(f => ({ ...f, statuses: f.statuses.filter(x => x !== s) }))} className="hover:text-gray-900">×</button>
               </span>
             ))}
+            {filters.sources.map(s => (
+              <span key={s} className="inline-flex items-center gap-1 px-2 py-0.5 bg-purple-100 text-purple-700 text-xs rounded-full">
+                {SOURCE_MAP[s].icon} {SOURCE_MAP[s].label}
+                <button onClick={() => setFilters(f => ({ ...f, sources: f.sources.filter(x => x !== s) }))} className="hover:text-purple-900">×</button>
+              </span>
+            ))}
             {filters.hasTicket !== 'all' && (
               <span className="inline-flex items-center gap-1 px-2 py-0.5 bg-teal-100 text-teal-700 text-xs rounded-full">
                 Ticket: {filters.hasTicket}
@@ -151,6 +179,12 @@ export default function BacklogPage() {
               <span className="inline-flex items-center gap-1 px-2 py-0.5 bg-slate-100 text-slate-700 text-xs rounded-full">
                 Customer: {filters.customer}
                 <button onClick={() => setFilters(f => ({ ...f, customer: '' }))} className="hover:text-slate-900">×</button>
+              </span>
+            )}
+            {filters.requestedBy && (
+              <span className="inline-flex items-center gap-1 px-2 py-0.5 bg-pink-100 text-pink-700 text-xs rounded-full">
+                By: {filters.requestedBy}
+                <button onClick={() => setFilters(f => ({ ...f, requestedBy: '' }))} className="hover:text-pink-900">×</button>
               </span>
             )}
           </div>
