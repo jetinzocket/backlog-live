@@ -17,14 +17,17 @@ export const supabase = isSupabaseConfigured
 // Query helpers
 // ──────────────────────────────────────────────
 
+// Static seed — rebuilt daily by the 8 AM IST routine; used when Supabase is not configured
+import seedData from '@/data/backlog-seed.json'
+
 export async function fetchAllItems(): Promise<BacklogItem[]> {
-  if (!supabase) return []
+  if (!supabase) return seedData as BacklogItem[]
   const { data, error } = await supabase
     .from('backlog_items')
     .select('*')
     .order('created_at', { ascending: false })
-  if (error) { console.error('fetchAllItems:', error); return [] }
-  return (data ?? []) as BacklogItem[]
+  if (error) { console.error('fetchAllItems:', error); return seedData as BacklogItem[] }
+  return (data ?? seedData) as BacklogItem[]
 }
 
 export async function fetchItem(id: string): Promise<BacklogItem | null> {
